@@ -28,7 +28,7 @@ html,body{
 	color: #D8D8D8;
 	text-align: center;
 	padding: 16px 16px 16px 16px;
-	width: 12.5vw;
+	width: 11vw;
 	text-decoration: none;
 }
 
@@ -90,8 +90,8 @@ html,body{
 
 .fig-headshot {
 	position:fixed;
-	top:13%;
-	left:1%;
+	top:7%;
+	left:0%;
 }
 
 img {

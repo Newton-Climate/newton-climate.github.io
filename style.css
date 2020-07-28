@@ -19,12 +19,12 @@ html,body{
 }
 
 .bar-item {
-  float: left;
+  	float: left;
 }
 
 .bar-item a {
 	float: left;
-  background: #4B505A;
+  	background: #4B505A;
 	color: #D8D8D8;
 	text-align: center;
 	padding: 16px 16px 16px 16px;
@@ -37,12 +37,13 @@ html,body{
 }
 
 .bar-icon{
+	float: left;
 	font-size:1.5vw;
 }
 
 .fa{
 	text-align:center;
-	padding:0px;
+	padding:14px 0px 0px 0px;
 	width:100px;
 	text-decoration:none;
 	cursor:pointer;
@@ -51,8 +52,8 @@ html,body{
 
 .fa:hover{
 	opacity:0.6;
-  color:white;
-  text-decoration:none;
+	color:white;
+	text-decoration:none;
 }
 
 .main-page{
@@ -65,8 +66,7 @@ html,body{
 	display:inline-block;
 	height:100%;
 	width:100%;
-/* 	background:#D8D8D8;  */
-  background-image: linear-gradient(315deg, #4B505A, #D8D8D8);
+  	background-image: linear-gradient(315deg, #4B505A, #D8D8D8);
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -75,31 +75,31 @@ html,body{
 .about-me {
 	font-size:16px;
 	font-weight:300;
-  color:#4B505A;
+  	color:#4B505A;
 	text-align: left;
-  padding: 12px 10px 0px 15px;
+  	padding: 0px 10px 0px 15px;
 	position:fixed;
 	color: #white;
-	top:18%;
-	left:24%;
-  transform: translate(-1%, -5%);
-  background-color: #B0C4DE;
-  background-image: linear-gradient(45deg, #B0C4DE, #D1E1F6);
-  border-radius: 20px;
+	top:11%;
+	left:26%;
+	transform: translate(-1%, -5%);
+	background-color: #B0C4DE;
+	background-image: linear-gradient(45deg, #B0C4DE, #D1E1F6);
+	border-radius: 20px;
 }
 
 .fig-headshot {
-  position:fixed;
-  top:13%;
-  left:1%;
+	position:fixed;
+	top:13%;
+	left:1%;
 }
 
 img {
-  border-radius: 20px;
+  	border-radius: 20px;
 }
 
 figcaption {
-  display: none;
+  	display: none;
 }
 
 

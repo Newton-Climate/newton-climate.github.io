@@ -1,5 +1,5 @@
-# Newton Nguyen's Website
-*Created by Erica McCormick*
+Newton Nguyen's Website
+Created by Erica McCormick
 
 Credits:
 HTML5UP "Story" (https://html5up.net/story)

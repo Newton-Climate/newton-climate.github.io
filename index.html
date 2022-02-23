@@ -1,68 +1,274 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<title> About Me </title>
-	<!-- Device Scaling -->
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-	<!-- Language Support -->
-	<meta charset="utf-8"> 
-	<!-- CSS -->
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-	<!-- JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-</head>
-<body>
-	<!--Main Page-->
-	<section class = "main-page">
-		<!--Navigation Bar-->
-		<nav class = "navbar">
-			<div class = "bar-item" id = "nav-home" aria-label="Home">
-				<a href = "index.html" id = "home-link" aria-label="Home">Home</a>
-			</div>
-			<div class = "bar-item" id = "nav-about" aria-label="About Me">
-				<a href = "about.html" id = "home-link" aria-label="About Me">About Me</a>
-			</div>	
-			<div class = "bar-item" id = "nav-research" aria-label="Research Interests">
-				<a href = "research.html" id = "research-link" aria-label="Research Interests">Research Interests</a>
-			</div>
-			<div class = "bar-item" id= "nav-pubs" aria-label="Publications">
-				<a href = "pubs.html" id = "pubs-link" aria-label="Publications">Publications</a>
-			</div>
-			<div class = "bar-item" id = "nav-blog" aria-label="Blog and Musings">
-				<a href = "blog.html" id = "blog-link" aria-label="Blog and Musings">Blog and Musings</a>
-			</div>
-            <div class = "bar-item" id = "nav-blind" aria-label="Blindness and Science">
-				<a href = "blindness.html" id = "blind-link" aria-label="Blindness and Science">Blindness and Science</a>
-			</div>
-            <div class = "bar-icon" id = "nav-mail" aria-label="Send email to Newton">
-                <a href = "mailto:newton@caltech.edu" class = "fa fa-envelope-o" aria-label="Send email to Newton"> </a>
-            </div>
-            <div class = "bar-icon" id = "nav-linkedin" aria-label="Newton's LinkedIn">
-                <a href = "https://www.linkedin.com/in/newtonnguyen" class = "fa fa-linkedin" aria-label="Newton's LinkedIn"> </a>
-            </div>
-            <div class = "bar-icon" id = "nav-github" aria-label="Newton's GitHub">
-                <a href = "https://github.com/Newton-Climate" class = "fa fa-github" aria-label="Newton's GitHub"> </a>
-            </div>
-            <div class = "bar-icon" id = "nav-twitter" aria-label="Newton's Twitter">
-                <a href = "https://twitter.com/notthatnewton" class = "fa fa-twitter" aria-label="Newton's Twitter"> </a>
-            </div>
-		</nav>
-        <figure class = "fig-headshot">
-            <img src="/pics/headshot.jpg">
-            <figcaption> Headshot of Newton at beach </figcaption>
-        </figure>
-        <article class = "about-me">
-            <p> I am a PhD student at Caltech in the Department of Environmental Science and Engineering, where I am funded by the National Science Foundation's Graduate Research Fellowship. Studying under Professor Christian Frankenberg, my main research is in understanding the impact of methane on our climate (from the atmospheric chemistry perspective) and how to better monitor methane emissions. To this end, I apply novel techniques from remote sensing, statistical optimization, and radiative transfer, incorporating data from orbiting satellites,  ground-based laser spectrometers, and numerical chemistry models. Combining the information and methods from these techniques provides insight into the variability of and quantifies the impact of global methane emissions. <br><br>
+	<head>
+		<title>Newton Nguyen</title>
+		<meta name="Description" content = "Newton Nguyen Caltech climate scientist"/>
+	    <meta name="keywords" content="">
+	    <meta name="author" content="Newton Nguyen">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
+	</head>
+	<body class="is-preload">
 
-        I am from the Bay Area, where I also went to school. My undergraduate degree was at UC Berkeley, where I was advised by Professor Bruce Buffet in Geophysics, studying computational algorithms  to model the flow of fluids. After graduation in 2016, I was employed by  Lawrence Berkeley National Lab under Dr. Daniel Feldman, where I worked on numerical radiative transfer models. I then proceeded to make the southern Migration to Pasadena for graduate school. <br><br>
+		<!-- Nav bar -->
+		<div class="topnav">
+		  <a class="topnav" href="/pdfs/CV_Newton.pdf">CV</a>
+		  <a class="topnav" href="#service">Service</a>
+		  <a class="topnav" href="#media">Media</a>
+		  <a class = "topnav" href="#research">Research</a>
+  		  <a class = "topnav" href="#home">Home</a>
+		</div>
+		
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
 
-        I am a blind scientist, and this has formed much of my perspective on approaching scientific problems. I aim to make science and society a better place for those with disabilities and underrepresented minorities through community involvement, public outreach, and advocacy. If you are interested in mentoring opportunities, please contact me. <br><br>
+				<!-- One -->
+					<section class="banner style1 invert orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id = "home">
+						<div class="content">
+							<h1>Newton Nguyen</h1>
+							<p class="major">Welcome! I am a climate scientist and marathon runner in the 5th year of my Ph.D. at the California Institute of Technology.</p>
+							
+					
+							
+							<ul class="actions">
+								<li><a href="https://scholar.google.com/citations?user=AziOzdwAAAAJ&hl=en&oi=sra" aria-label="Google Scholar">
+									<i class="icon  style2 ai ai-google-scholar" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/newtonnguyen/" aria-label="LinkedIn">
+									<i class="icon brands style2 fa-linkedin-in" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/notthatnewton" aria-label="Twitter">
+									<i class="icon brands style2 fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://github.com/Newton-Climate" aria-label="GitHub">
+									<i class="icon brands style2 fa fa-github" aria-hidden = "true"> </i></a></li>
+								<li><a href="https://orcid.org/0000-0002-9118-867" aria-label="Orcid ID">
+									<i class="icon  style2 ai ai-orcid" aria-hidden="true"></i></a></li>
+								<li><a href="#" aria-label="CV">
+									<i class="icon style2 ai ai-cv" aria-hidden = "true"> </i></a></li>			
+								<li><a href="https://www.strava.com/athletes/7568843" aria-label="Strava">
+									<i class="icon brands style2 fa fa-strava" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/headshot.jpeg" alt="Headshot of Newton wearing running gear and standing in front of a tree in California" />
+						</div>
+					</section>
 
-        Outside work, I train and race in marathons and triathlons. My philosophy with the swimming aspect of triathlon is to "drown forward," which is also a good philosophy for graduate school. Many people have told me that graduate school is also like running a marathon. This hypothesis is still being reviewed.</p>
-        </article>
-	</section>
-</body>
+				
+	
+					<!-- SECOND TRY -->
+					<section class="spotlight style2 larger orient-right content-align-left image-position-center onscroll-image-fade-in" id = "research">
+						<div class="content">
+						<!-- 	<h3>HIGHLIGHTED RESEARCH</h3> -->
+						  <h2>My Research</h2>
+							<p>I am a 5th year PhD Candidate at the <a href = "http://www.lindecenter.caltech.edu/">Center for Global Climate Change</a> at <a href = "https://www.gps.caltech.edu/">Caltech</a>. I am currently being advised by <a href = "http://web.gps.caltech.edu/~cfranken/">Dr. Christian Frankenberg</a>, whose lab specializes in carbon cycling and remote sensing. My focus is on understanding the ultimate fate of methane and other carbon species in the atmosphere. To do this, I apply remote sensing and data assimulation to improve the way we detect, quanitfy, and trace carbon with satellites and ground-based sensors.</p>
+					
+<ul class="actions">
+	  <li><a href="/projects.html" class="button">Find out more</a></li>
+						  </ul>
+					
+					</div>
+						<div class="image">
+							<img src="images/methane_map_zoom2.jpg" alt="Map of the world with heatmap of colors" />
+						</div>
+					</section>
+	
+			
+	
+						
+						
+				<!-- Press -->
+					<section class="wrapper style5 align-center" id = "media">
+						<div class="inner">
+							<br>
+							<br>
+							<h2>Featured in...</h2>
+							<!--	<p>For a full list of media coverage, talks, and panels I have participated in, see <a href = "#">here</a>.</p> 	-->
+							<p></p>
+
+						<!-- Gallery -->
+							<div class=" gallery style2 small lightbox">
+
+								<article>
+									<a href="https://www.runnersworld.com/runners-stories/a37897541/newton-nguyen-running-boston-marathon/#:~:text=Running%20has%20been%20the%20through,person%20with%20disability%20can%20achieve." class="image">
+										<img src="images/gallery/shoes.png" alt="Newton Nguyen tying his shoes before a run." />
+									</a>
+									<div class="caption">
+										<h3>Runner's World: "How Running Has Helped Newton Nguyen Navigate Life as a Blind Man"</h3>
+										<p>2022</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Read the article</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								
+								<article>
+									<a href="https://www.youtube.com/watch?v=fm0xMKAvkRw" class="image">
+										<img src="images/gallery/doc.png" alt="Newton Nguyen sitting in a chair on a film set being interviewed" />
+									</a>
+									<div class="caption">
+										<h3>Mini-Documentary: "Marathoning Through Life with Vision Loss"</h3>
+										<p>2021</p>
+										<ul class="actions fixed">
+											<li><span class="button small">See the video</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								
+
+								<article>
+									<a href="https://youtu.be/vk6m8vifpG8" class="image">
+										<img src="images/gallery/ally.png" alt="Ally Bank logo" />
+									</a>
+									<div class="caption">
+										<h3>Ally Commercial: "We're All Better off With an Ally"</h3>
+										<p>2021</p>
+										<ul class="actions fixed">
+											<li><span class="button small">See the video</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								<article>
+									<a href="https://podcasts.apple.com/us/podcast/episode-35-climate-scientist-newton-nguyen/id1527098674?i=1000537353813" class="image">
+										<img src="images/gallery/podcast.png" alt="Black and grey logo of the podcast Careers for the Blind" />
+									</a>
+									<div class="caption">
+										<h3>Careers for the Blind Podcast: "Episode 35: Climate Scientist Newton Nguyen"</h3>
+										<p>2021</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Read the article</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								<article>
+									<a href="https://diversity.lbl.gov/2016/10/14/newton-nguyens-vision-loss-doesnt-slow-him-down/" class="image">
+										<img src="images/gallery/sitting.png" alt="Map of the world with flags shaped by leaves showing where profiles have been done" />
+									</a>
+									<div class="caption">
+										<h3>Lawrence Berkeley National Lab News: "Newton Nguyen’s Vision Loss Doesn’t Slow Him Down"</h3>
+										<p>2016</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Read the article</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								<article>
+									<a href="https://news.berkeley.edu/2017/05/18/despite-failed-vision-alum-running-a-self-guided-race-to-his-ph-d/" class="image">
+										<img src="images/gallery/track.png" alt="Newton Nguyen on the Berkeley track preparing to run" />
+									</a>
+									<div class="caption">
+										<h3>UC Berkeley News: "Despite failed vision, alum running a self-guided race to his Ph.D.""</h3>
+										<p>2017</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Read the article</span></li>
+										</ul>
+									</div>
+								</article>
+								
+								<article>
+									<a href="https://www.ktvu.com/news/98-percent-blind-cal-berkeley-student-competes-as-triathlete" class="image">
+										<img src="images/gallery/grass_sitting.png" alt="Newton Nguyen sitting on the grass stretching in running gear." />
+									</a>
+									<div class="caption">
+										<h3>KTVU News: "98 percent blind Cal Berkeley student competes as triathlete"</h3>
+										<p>2015</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Read the article</span></li>
+										</ul>
+									</div>
+								</article>
+
+		
+							</div>
+							<p></p>
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id = "service">
+						<div class="content">
+							<h2>Service</h2>
+							
+								<dl>
+									<dt>Cofounder: Systemic Access Mentorship Program</dt>
+
+										<dd>
+											<p>I cofounded this mentorship program to bring together blind students in STEM and provides tools for success. To date, there have been 40 matched participants/mentees across 3 countries.</p>
+										</dd>
+									
+									<dt>Member: <a href = "https://inclusive.caltech.edu/about/commitments-progress/committee-on-student-admissions-and-recruitment">Caltech Graduate Admissions Policy Committee</a></dt>
+
+										<dd>
+											<p>I was selected by the President of Caltech to be student representative for the faculty committee tasked with increasing student body diversity and rewriting graduate admissions policies. This work involved extensive analysis of past admissions data and policies from other institutions and resulted in a published white paper and a newly implemented admissions protocol by the university. [<a href = "https://inclusive.caltech.edu/documents/19303/Report_of_the_Committee_on_Student_Admissions_and_Recruitment.pdf">Read the report</a>]</p>
+										</dd>
+									
+									<dt>Member: <a href = "https://www.aapt.org/">American Association of Physics Teachers Committee for Accessible Labs</a></dt>
+										<dd>
+											<p>As a member of this committee, I was tasked with making recommendations for university and k-12 physics lab accessibility. We published one white paper on this subject after thorough research on best practices for accessibility and education for disabled students. [<a href = "https://www.aapt.org/aboutaapt/organization/upload/white_paper_on_accessible_labs_endorsed.pdf">Read the report</a>] </p>
+										</dd>
+									
+									<dt>Founder and President: <a href = "https://triathlon.clubs.caltech.edu/">Caltech Triathlon Club</a></dt>
+									
+														
+							<!--		<ul class="actions">
+	  									<li><a href="/projects.html" class="button">See More</a></li>
+						  			</ul> -->
+
+						</div>
+						<div class="image">
+							<img src="images/MS_RWNewtonNguyen 109.jpg" alt="Newton Nguyen stretching with a guide in the California sunset" />
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							
+						
+							<ul class="icons">
+								<li><a href="https://scholar.google.com/citations?user=AziOzdwAAAAJ&hl=en&oi=sra" aria-label="Google Scholar">
+									<i class="icon  style2 ai ai-google-scholar" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/newtonnguyen/" aria-label="LinkedIn">
+									<i class="icon brands style2 fa-linkedin-in" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/notthatnewton" aria-label="Twitter">
+									<i class="icon brands style2 fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://github.com/Newton-Climate" aria-label="GitHub">
+									<i class="icon brands style2 fa fa-github" aria-hidden = "true"> </i></a></li>
+								<li><a href="https://orcid.org/0000-0002-9118-867" aria-label="Orcid ID">
+									<i class="icon  style2 ai ai-orcid" aria-hidden="true"></i></a></li>
+								<li><a href="/pdfs/CV_Newton.pdf" aria-label="CV">
+									<i class="icon style2 ai ai-cv" aria-hidden = "true"> </i></a></li>			
+								<li><a href="https://www.strava.com/athletes/7568843" aria-label="Strava">
+									<i class="icon brands style2 fa fa-strava" aria-hidden="true"></i></a></li>
+							</ul>
+							<p>You can reach me at <strong>newton@caltech.edu</strong>.<br>
+							&copy; Newton Nguyen 2022. Design modified from <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

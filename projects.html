@@ -4,161 +4,401 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Newton Nguyen</title>
-		<meta name="Description" content = "Newton Nguyen Caltech climate scientist"/>
-	    <meta name="keywords" content="">
-	    <meta name="author" content="Newton Nguyen">
+		<title>Research &mdash; Newton Nguyen</title>
+		<meta name="description" content="Research of Newton Nguyen, climate scientist at Stanford University: atmospheric methane chemistry, greenhouse gas remote sensing, and the carbon cycle." />
+		<meta name="author" content="Newton Nguyen">
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
+		<link rel="stylesheet" href="assets/css/custom.css" />
 	</head>
 	<body class="is-preload">
 
+		<a class="skip-link" href="#main">Skip to main content</a>
+
 		<!-- Nav bar -->
-		<div class="topnav">
+		<nav class="topnav" aria-label="Primary">
 		  <a class="topnav" href="/pdfs/Newton_Nguyen_Resume.pdf">Resume</a>
 		  <a class="topnav" href="/pdfs/CV_Newton.pdf">CV</a>
 		  <a class="topnav" href="index.html#service">Service</a>
 		  <a class="topnav" href="index.html#media">Media</a>
-		  <a href="index.html">Research</a>
-  		  <a href="index.html#home">Home</a>
-		</div>
-		
+		  <a class="topnav" href="projects.html" aria-current="page">Research</a>
+		  <a class="topnav" href="index.html#home">Home</a>
+		</nav>
+
 		<!-- Wrapper -->
-	<div id="wrapper" class="divided">
-			<!-- One -->
-					<section class="banner style5 invert orient-left content-align-left image-position-center">
-						<div class="content">
-							<h1>My Research</h1>
-					
-						</div>
-						<div class="image">
-							<img src="images/earth_night_lights_3.png" alt="The Earth at night" />
-						</div>
-					</section>
+		<div id="wrapper" class="divided">
 
-
-	<!-- Additional Elements -->
-		<section class="wrapper style1 align-center">
-			<div class="inner">
-				<div class="index align-left">
-					<section>
-						<div class="content">
-									
-							<h2>Peer-reviewed publications:</h2>
-							
-						
-								<p><strong>N.H. Nguyen</strong>, A.J. Turner, Y Yin, M.J. Prather, C. Frankenberg. (2020) Effects of Chemical Feedbacks on Decadal Methane Emissions Estimates. <i>Geophysical Research Letters</i>. <a href ="https://doi.org/10.1029/2019GL085706">10.1029/2019GL085706</a>. [<a href = "pdfs/Nguyen_GRL_2020.pdf">pdf</a>] </p>
-
-								<p>W.D. Collins, D.R. Feldman, <strong>N.H. Nguyen</strong>. (2018) Large regional shortwave forcing by anthropogenic methane informed by Jovian observations. <i>Science Advances</i>. <a href = "https://doi.org/10.1126/sciadv.aas9593">10.1126/sciadv.aas9593</a>. [<a href = "pdfs/Collins_ScienceAdvances_2018.pdf">pdf</a>]</p>
-
-
-								<p>D.R. Feldman, W.D. Collins, Y Shea, <strong>N.H. Nguyen</strong>, X Liu, B Wielicki. (2016) Observing Climate Change With Both Shortwave and Longwave Hyperspectral Satellite Instrumentation. <i>Light, Energy and the Environment</i>. <a href = "https://doi.org/10.1364/HISE.2016.HW2F.1">10.1364/HISE.2016.HW2F.1</a> </p>
-
-
-							<h2>Publications in progress:</h2>
-							
-								<p>H Don-Kirschner, <strong>N.H. Nguyen</strong>, C Frankenberg , W.W. Fischer.(In Revision) Methanotrophy as a key negative feedback on atmospheric methane. <i>Geophysical Research Letters</i>.</p>
-
-								<p><strong>N.H. Nguyen</strong>, K Cossel, E Waxman, N Newbury, I Coddington, C Frankenberg. (In Prep) Towards long-term greenhouse monitoring with frequency combs. <i>Atmospheric Measurement Techniques</i>.</p>
-
-								<p><strong>N.H. Nguyen</strong>, K Cossel, E Waxman, N Newbury, I Coddington, C Frankenberg. (In Prep) Vertical profile retrieval for greenhouse gases with frequency combs. <i>Atmospheric Measurement Techniques</i>.</p>
-
-							<h2>Technical projects:</h2>
-							
-				
-								<dl>
-									<dt>SpectralFits.jl</dt>
-
-										<dd>
-											<p>I designed and implemented this flexible interface to simulate concentrations of greenhouse gas molecules corresponding to a variety of observation instruments. I used a bayesian inversion algorithm to infer statistical measures such as the Shannon information content, degrees of freedom, and the posterior error covariance. This work resulted in 2 invited talks and 1 publication.</p>
-
-										</dd>
-
-									<dt>OHMethane</dt>
-
-										<dd>
-											<p>I designed this model to simulate atmospheric methane chemistry and infer global eissions based on chemical constraints. Like SpectralFits.jl, this model uses a bayesian algorithm to infer climate-relevant emissions including methane, carbon monoxide, and other species. This work resulted in 2 conference presentations and 2 publications.</p>
-										</dd>
-								</dl>
-							
-							
-					<!--
-							<h2>Other projects:</h2>
-							
-								<dl>
-									<dt>NASA Satellite Stuff</dt>
-
-										<dd>
-											<p>I helped with the...</p>
-
-										</dd>
-
-									<dt>Methane from soils</dt>
-
-										<dd>
-											<p>I worked with people on this...</p>
-										</dd>
-								</dl> -->
-							
-							
-						</div>
-					</section>
+			<!-- Banner -->
+			<section class="banner style5 invert orient-left content-align-left image-position-center">
+				<div class="content">
+					<h1>Research</h1>
 				</div>
-			</div>
-		</section>
-						
-			
-				
-				
-				
-				
-				
-				
-				
-				
-	
+				<div class="image">
+					<img src="images/earth-night.jpg" alt="The Earth at night, city lights picking out the continents against the dark oceans." />
+				</div>
+			</section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							
-						
-							<ul class="icons">
-								<li><a href="https://scholar.google.com/citations?user=AziOzdwAAAAJ&hl=en&oi=sra" aria-label="Google Scholar">
-									<i class="icon  style2 ai ai-google-scholar" aria-hidden="true"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/newtonnguyen/" aria-label="LinkedIn">
-									<i class="icon brands style2 fa-linkedin-in" aria-hidden="true"></i></a></li>
-								<li><a href="https://twitter.com/notthatnewton" aria-label="Twitter">
-									<i class="icon brands style2 fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="https://github.com/Newton-Climate" aria-label="GitHub">
-									<i class="icon brands style2 fa fa-github" aria-hidden = "true"> </i></a></li>
-								<li><a href="https://orcid.org/0000-0002-9118-867" aria-label="Orcid ID">
-									<i class="icon  style2 ai ai-orcid" aria-hidden="true"></i></a></li>
-								<li><a href="/pdfs/CV_Newton.pdf" aria-label="CV">
-									<i class="icon style2 ai ai-cv" aria-hidden = "true"> </i></a></li>			
-								<li><a href="https://www.strava.com/athletes/7568843" aria-label="Strava">
-									<i class="icon brands style2 fa fa-strava" aria-hidden="true"></i></a></li>
-							</ul>
-							<p>&copy; Newton Nguyen 2022. Design modified from <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+			<main id="main">
 
-			</div>
+			<!-- Themes -->
+			<section class="wrapper style1 align-center">
+				<div class="inner">
+					<div class="index align-left">
+						<section>
+							<div class="content">
+
+								<div class="align-center">
+									<span class="section-label">Overview</span>
+									<h2>Research areas</h2>
+									<p class="section-intro">My research concerns the atmospheric budget of methane and other carbon species: their sources, their chemical loss, and the measurements required to constrain both. I develop numerical models, spectroscopic retrieval algorithms, and Bayesian inverse methods, and apply them to satellite, ground-based, and laser spectroscopic observations.</p>
+								</div>
+
+								<div class="themes">
+
+									<article class="theme">
+										<figure class="theme-figure">
+											<img src="images/research/schematic-methane-feedback.svg" alt="Diagram of the methane-hydroxyl feedback loop. Methane and the hydroxyl radical OH are linked by two arrows: methane consumes OH, and the resulting loss of OH lets methane survive longer, forming a positive feedback. Below, a bar chart shows that a 10 teragram methane pulse lasts 9.4 years when chemistry is held fixed, but 13.2 years when chemistry is allowed to respond." />
+										</figure>
+										<div class="theme-body">
+											<h3>Chemical feedbacks on methane lifetime</h3>
+											<ul class="tags">
+												<li>Atmospheric chemistry</li>
+												<li>Box modeling</li>
+												<li>Bayesian inversion</li>
+											</ul>
+											<p>Methane is removed from the atmosphere principally by reaction with the hydroxyl radical, OH. Because this reaction also depletes OH, an increase in methane lengthens the lifetime of the methane already present. Models that hold OH chemistry fixed therefore misestimate both the lifetime of an emissions perturbation and the emissions inferred from concentration records.</p>
+											<p>Using a coupled methane&ndash;CO&ndash;OH box model, I showed that these feedbacks extend the perturbation lifetime of a methane pulse from 9.4 to 13.2 years, an increase of approximately 40%, with corresponding implications for decadal emissions estimates.</p>
+										</div>
+									</article>
+
+									<article class="theme">
+										<figure class="theme-figure">
+											<img src="images/research/schematic-spectroscopy-retrieval.svg" alt="Diagram of a greenhouse gas retrieval. Sunlight passes down through atmospheric layers where methane and carbon dioxide molecules absorb it, and reaches a ground-based spectrometer. The measured spectrum, showing three absorption dips, is converted by a Bayesian retrieval into a vertical profile of concentration against altitude with a shaded uncertainty band." />
+										</figure>
+										<div class="theme-body">
+											<h3>Retrieving greenhouse gases from spectra</h3>
+											<ul class="tags">
+												<li>Remote sensing</li>
+												<li>Frequency combs</li>
+												<li>Optimal estimation</li>
+											</ul>
+											<p>Greenhouse gases absorb at characteristic wavelengths, so the spectrum of light transmitted through the atmosphere carries information about their concentrations. Recovering those concentrations, together with a defensible uncertainty, is an inverse problem whose solution depends on the instrument, the spectroscopic parameters, and the prior constraints imposed.</p>
+											<p>I develop retrieval algorithms that operate across instruments, including TCCON, OCO-2, dual-comb spectrometers, and laser heterodyne radiometers. I also apply information-content analysis to establish what a proposed instrument would be capable of measuring before it is built.</p>
+										</div>
+									</article>
+
+									<article class="theme">
+										<figure class="theme-figure">
+											<img src="images/research/schematic-methane-sink.svg" alt="Diagram of the global methane sink. A stacked bar divides it into about 90 percent reaction with OH in the troposphere, about 6 percent loss in the stratosphere, and about 4 percent uptake by soil microbes. Below, a soil cross-section shows methane diffusing down to methanotrophic bacteria that oxidize it to carbon dioxide, next to a wide error bar showing that the size of the soil sink is poorly constrained." />
+										</figure>
+										<div class="theme-body">
+											<h3>Constraining the methane sink</h3>
+											<ul class="tags">
+												<li>Carbon cycle</li>
+												<li>Soil microbiology</li>
+												<li>Ice-core records</li>
+											</ul>
+											<p>Reaction with OH accounts for roughly 90% of methane removal, while a few percent is oxidized by methanotrophic bacteria in soils. The soil term is small and poorly constrained: uncertainty in methanotrophy kinetics dominates the overall error on its magnitude.</p>
+											<p>I study these sinks in the present day and across longer records, including a global atmospheric methane history recovered from a tropical ice core, which extends the observational baseline for assessing recent change.</p>
+										</div>
+									</article>
+
+								</div>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Selected results -->
+			<section class="wrapper style2 align-center">
+				<div class="inner">
+					<div class="index align-left">
+						<section>
+							<div class="content">
+
+								<div class="align-center">
+									<span class="section-label">Results</span>
+									<h2>Selected figures</h2>
+								</div>
+
+								<div class="figures">
+
+									<figure class="figure-card">
+										<img src="images/research/fig-methane-lifetime.jpg" alt="Line chart of the change in methane concentration in parts per billion over thirty years after a 10 teragram pulse. Both curves jump to about 3.4 ppb at year zero and then decay. The dashed red curve, with chemistry held fixed, falls to half its peak by year 9.4. The solid black curve, with interactive chemistry, decays more slowly and reaches the same level only at year 13.2." />
+										<figcaption>
+											<strong>Effect of chemical feedbacks on perturbation lifetime.</strong> A 10 Tg methane pulse decays with a 9.4-year lifetime when OH chemistry is held fixed, and with a 13.2-year lifetime when the chemistry is interactive.
+											<span class="figure-source">Figure 1a from Nguyen et al., <i>Geophysical Research Letters</i> (2020).</span>
+										</figcaption>
+									</figure>
+
+									<figure class="figure-card">
+										<img src="images/research/fig-shortwave-forcing.jpg" alt="World map of all-sky shortwave radiative forcing from methane, in watts per square metre. Most of the globe is pale pink near zero. A strong hotspot of 0.19 to 0.25 watts per square metre covers the Sahara and the Arabian Peninsula, with weaker green and blue patches over southern Africa, Australia, and central Asia." />
+										<figcaption>
+											<strong>Regional structure of shortwave methane forcing.</strong> Shortwave absorption by methane is largest over bright desert surfaces, concentrating the forcing over North Africa and the Arabian Peninsula.
+											<span class="figure-source">Figure 3a from Collins, Feldman, Kuo &amp; Nguyen, <i>Science Advances</i> (2018).</span>
+										</figcaption>
+									</figure>
+
+								</div>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Publications -->
+			<section class="wrapper style1 align-center">
+				<div class="inner">
+					<div class="index align-left">
+						<section>
+							<div class="content">
+
+								<div class="align-center">
+									<span class="section-label">Publications</span>
+									<h2>Peer-reviewed and conference work</h2>
+									<p class="section-intro">A full list is on <a href="https://scholar.google.com/citations?user=AziOzdwAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0002-9118-8672">ORCID</a>.</p>
+								</div>
+
+								<h3 class="pub-year">2026</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">A global atmospheric methane record from a tropical ice core</span>
+										<span class="pub-authors">K.A. Lamantia, L.G. Thompson, M.E. Davis, B. Riddell-Young, I. Strawson, &Eacute;. Beaudon, E. Mosley-Thompson, <span class="me">N.H. Nguyen</span>, E.J. Brook</span>
+										<span class="pub-meta">
+											<i class="venue is-flagship">Nature</i>
+											<a href="https://doi.org/10.1038/s41586-026-10938-1">10.1038/s41586-026-10938-1</a>
+										</span>
+									</li>
+									<li>
+										<span class="pub-title">Natural variability in stratosphere&ndash;troposphere exchange: an underappreciated driver of global methane growth rates</span>
+										<span class="pub-authors">Y. Yin, <span class="me">N.H. Nguyen</span>, Q. Wang, A.J. Turner, F. Chevallier, C. Frankenberg</span>
+										<span class="pub-meta">
+											<i class="venue">EGU General Assembly</i>
+											<a href="https://doi.org/10.5194/egusphere-egu26-21945">10.5194/egusphere-egu26-21945</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2025</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Enhancing the monitoring of dispersed methane sources with open-path optical sensors</span>
+										<span class="pub-authors">C. Huff, A.M. Hoyt, J. Lamb, <span class="me">N.H. Nguyen</span>, A. Majumdar, L.W. Hollberg</span>
+										<span class="pub-meta">
+											<i class="venue">Optica Sensing Congress</i>
+											<a href="https://doi.org/10.1364/sensors.2025.sm2d.2">10.1364/sensors.2025.sm2d.2</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2024</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Evaluating the contribution of methanotrophy kinetics to uncertainty in the soil methane sink</span>
+										<span class="pub-authors">H. Dion-Kirschner, <span class="me">N.H. Nguyen</span>, C. Frankenberg, W.W. Fischer</span>
+										<span class="pub-meta">
+											<i class="venue">Environmental Research Letters</i>
+											<a href="https://doi.org/10.1088/1748-9326/ad4c7a">10.1088/1748-9326/ad4c7a</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2023</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Precision Doppler shift measurements with a frequency-comb-calibrated laser heterodyne radiometer</span>
+										<span class="pub-authors">R.K. Cole, C.D. Fredrick, <span class="me">N.H. Nguyen</span>, S.A. Diddams</span>
+										<span class="pub-meta">
+											<i class="venue">Optics Letters</i>
+											<a href="https://doi.org/10.1364/ol.500652">10.1364/ol.500652</a>
+											<a href="https://arxiv.org/pdf/2307.07441">pdf</a>
+										</span>
+									</li>
+									<li>
+										<span class="pub-title">Precision atmospheric wind measurements with a frequency-comb-calibrated laser heterodyne radiometer</span>
+										<span class="pub-authors">R.K. Cole, C.D. Fredrick, <span class="me">N.H. Nguyen</span>, C. Frankenberg, S.A. Diddams</span>
+										<span class="pub-meta">
+											<i class="venue">Optica Sensing Congress</i>
+											<a href="https://doi.org/10.1364/es.2023.etu5e.5">10.1364/es.2023.etu5e.5</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2022</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Increase investment in accessible physics labs: a call to action for the physics education community</span>
+										<span class="pub-authors">D.R. Dounas-Frazer, D.L. Gillen, C.M. Herne, E. Howard, R. Lindell, G.I. McGrew, J.R. Mumford, <span class="me">N.H. Nguyen</span>, L.C. Osadchuk, J. Principato Crane, T.M. Pugeda, K. Reeves, E.M. Scanlon, D. Spiecker, S.Z. Xu</span>
+										<span class="pub-meta">
+											<i class="venue is-preprint">arXiv preprint</i>
+											<a href="https://doi.org/10.48550/arxiv.2202.00816">10.48550/arXiv.2202.00816</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2020</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Effects of chemical feedbacks on decadal methane emissions estimates</span>
+										<span class="pub-authors"><span class="me">N.H. Nguyen</span>, A.J. Turner, Y. Yin, M.J. Prather, C. Frankenberg</span>
+										<span class="pub-meta">
+											<i class="venue">Geophysical Research Letters</i>
+											<a href="https://doi.org/10.1029/2019GL085706">10.1029/2019GL085706</a>
+											<a href="pdfs/Nguyen_GRL_2020.pdf">pdf</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2018</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Large regional shortwave forcing by anthropogenic methane informed by Jovian observations</span>
+										<span class="pub-authors">W.D. Collins, D.R. Feldman, C. Kuo, <span class="me">N.H. Nguyen</span></span>
+										<span class="pub-meta">
+											<i class="venue">Science Advances</i>
+											<a href="https://doi.org/10.1126/sciadv.aas9593">10.1126/sciadv.aas9593</a>
+											<a href="pdfs/Collins_ScienceAdvances_2018.pdf">pdf</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">2016</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Observing climate change with both shortwave and longwave hyperspectral satellite instrumentation</span>
+										<span class="pub-authors">D.R. Feldman, W.D. Collins, Y.L. Shea, <span class="me">N.H. Nguyen</span>, X. Liu, B.A. Wielicki</span>
+										<span class="pub-meta">
+											<i class="venue">Light, Energy and the Environment</i>
+											<a href="https://doi.org/10.1364/HISE.2016.HW2F.1">10.1364/HISE.2016.HW2F.1</a>
+										</span>
+									</li>
+								</ul>
+
+								<h3 class="pub-year">In preparation</h3>
+								<ul class="pubs">
+									<li>
+										<span class="pub-title">Towards long-term greenhouse gas monitoring with frequency combs</span>
+										<span class="pub-authors"><span class="me">N.H. Nguyen</span>, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg</span>
+										<span class="pub-meta">
+											<i class="venue">Atmospheric Measurement Techniques</i>
+											<span class="pub-status">in preparation</span>
+										</span>
+									</li>
+									<li>
+										<span class="pub-title">Vertical profile retrieval for greenhouse gases with frequency combs</span>
+										<span class="pub-authors"><span class="me">N.H. Nguyen</span>, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg</span>
+										<span class="pub-meta">
+											<i class="venue">Atmospheric Measurement Techniques</i>
+											<span class="pub-status">in preparation</span>
+										</span>
+									</li>
+								</ul>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Software -->
+			<section class="wrapper style2 align-center">
+				<div class="inner">
+					<div class="index align-left">
+						<section>
+							<div class="content">
+
+								<div class="align-center">
+									<span class="section-label">Software</span>
+									<h2>Research software</h2>
+									<p class="section-intro">Models and retrieval tools developed for the work above. Source code is publicly available.</p>
+								</div>
+
+								<ul class="software">
+
+									<li>
+										<h3>EnforceFlux</h3>
+										<span class="lang">Python</span>
+										<p>An observing-system simulation framework for evaluating methane monitoring networks prior to deployment. Couples FLEXPART atmospheric transport with Bayesian inversion to quantify the constraint a proposed sensor layout would place on emissions.</p>
+										<a class="repo" href="https://github.com/Newton-Climate/EnforceFlux">View on GitHub</a>
+									</li>
+
+									<li>
+										<h3>SpectralFit.jl</h3>
+										<span class="lang">Julia</span>
+										<p>A retrieval interface for greenhouse gas concentrations and vertical profiles from spectroscopic measurements, including TCCON, OCO-2, and dual-comb spectra. Implements Bayesian inversion with diagnostics for information content, degrees of freedom for signal, and posterior error covariance.</p>
+										<a class="repo" href="https://github.com/Newton-Climate/SpectralFit.jl">View on GitHub</a>
+									</li>
+
+									<li>
+										<h3>OHMethane</h3>
+										<span class="lang">Julia &amp; MATLAB</span>
+										<p>A four-box model of atmospheric methane chemistry that infers global emissions under chemical constraints, representing the coupled methane&ndash;CO&ndash;OH system and the feedbacks between its components.</p>
+										<a class="repo" href="https://github.com/Newton-Climate/OHMethane">View on GitHub</a>
+									</li>
+
+									<li>
+										<h3>ConstrainedCarbon</h3>
+										<span class="lang">Python</span>
+										<p>A model of ecosystem-level carbon cycling with configurable pool structure, used to determine the observations required to distinguish competing representations of soil carbon turnover.</p>
+										<a class="repo" href="https://github.com/Newton-Climate/ConstrainedCarbon">View on GitHub</a>
+									</li>
+
+								</ul>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			</main>
+
+			<!-- Footer -->
+			<footer class="wrapper style1 align-center">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://scholar.google.com/citations?user=AziOzdwAAAAJ&amp;hl=en" aria-label="Google Scholar">
+							<i class="icon style2 ai ai-google-scholar" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/newtonnguyen/" aria-label="LinkedIn">
+							<i class="icon brands style2 fa-linkedin-in" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/notthatnewton" aria-label="Twitter">
+							<i class="icon brands style2 fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/Newton-Climate" aria-label="GitHub">
+							<i class="icon brands style2 fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="https://orcid.org/0000-0002-9118-8672" aria-label="ORCID">
+							<i class="icon style2 ai ai-orcid" aria-hidden="true"></i></a></li>
+						<li><a href="/pdfs/CV_Newton.pdf" aria-label="CV">
+							<i class="icon style2 ai ai-cv" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.strava.com/athletes/7568843" aria-label="Strava">
+							<i class="icon brands style2 fa fa-strava" aria-hidden="true"></i></a></li>
+					</ul>
+					<p>&copy; Newton Nguyen 2026. Design modified from <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</div>
+			</footer>
+
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

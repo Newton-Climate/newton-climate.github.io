@@ -1,0 +1,397 @@
+% =====================================================================
+%  Curriculum Vitae -- Newton Huy Nguyen
+%  Build:  pdflatex CV_Newton.tex   (run once; no bibliography needed)
+%  Output: CV_Newton.pdf  -> copy to ../pdfs/CV_Newton.pdf
+%
+%  SOURCES MERGED INTO THIS VERSION (Nov 2026):
+%    - CV_Newton.pdf as uploaded to GitHub, Apr 2024  (academic sections)
+%    - Newton_Nguyen_Spectral_ML_Resume-2.docx, 2026  (positions, systems)
+%    - OpenAlex publication record                    (verified citations)
+%
+%  STILL TO FILL IN -- only you know these:
+%    - Honors or awards received in 2025 and 2026
+%    - Invited talks given after the Stanford d.School panel (2023)
+%    - Conference presentations after AGU 2022 that you presented yourself
+%      (the 2023/2025 Optica and 2026 EGU abstracts are listed under
+%       publications; move them here if you presented them)
+%    - Teaching after Summer 2019, including the Caltech co-taught courses
+%    - End dates for service roles still marked "Present"
+% =====================================================================
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage[margin=0.8in,bottom=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+
+\definecolor{rule}{HTML}{30363D}
+\definecolor{link}{HTML}{1D6670}
+\hypersetup{colorlinks=true, urlcolor=link, linkcolor=link,
+            pdftitle={Newton Huy Nguyen -- Curriculum Vitae},
+            pdfauthor={Newton Huy Nguyen}}
+
+% --- section headings -------------------------------------------------
+\titleformat{\section}
+  {\normalfont\bfseries\scshape\large\color{rule}}
+  {}{0pt}{}[{\color{rule}\titlerule[0.9pt]}]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+
+\titleformat{\subsection}{\normalfont\bfseries\itshape\normalsize}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{9pt}{3pt}
+
+% --- helpers ----------------------------------------------------------
+\setlist[itemize]{leftmargin=1.3em, topsep=2pt, itemsep=1pt, parsep=0pt}
+\newcommand{\entry}[3]{\noindent\textbf{#1}~\textbar~#2\hfill{#3}\par}
+\newcommand{\simpleentry}[2]{\noindent #1\hfill{#2}\par\vspace{1pt}}
+\newcommand{\me}{\textbf{N.H. Nguyen}}
+\setlength{\parindent}{0pt}
+
+\newenvironment{pubs}
+  {\begin{list}{}{\leftmargin=1.6em \itemindent=-1.6em
+   \topsep=3pt \itemsep=4pt \parsep=0pt}}
+  {\end{list}}
+
+% keep a section heading with at least a few lines of its content
+\let\oldsection\section
+\renewcommand{\section}[1]{\Needspace*{5\baselineskip}\oldsection{#1}}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}[1]{\Needspace*{4\baselineskip}\oldsubsection{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}Newton Huy Nguyen \textbullet\ \thepage}
+
+\begin{document}
+
+% =====================================================================
+\begin{center}
+  {\LARGE\bfseries Newton Huy Nguyen, Ph.D.}\\[4pt]
+  Doerr School of Sustainability \& Department of Physics, Stanford University\\[3pt]
+  San Francisco, CA \quad\textbullet\quad (408) 613-4379 \quad\textbullet\quad
+  \href{mailto:nnewton@stanford.edu}{nnewton@stanford.edu}\\[2pt]
+  \href{https://newton-climate.github.io}{newton-climate.github.io} \;\textbullet\;
+  \href{https://scholar.google.com/citations?user=AziOzdwAAAAJ&hl=en}{Google Scholar} \;\textbullet\;
+  \href{https://orcid.org/0000-0002-9118-8672}{ORCID 0000-0002-9118-8672} \;\textbullet\;
+  \href{https://github.com/Newton-Climate}{GitHub}
+\end{center}
+\vspace{4pt}
+
+% =====================================================================
+\section{Education}
+
+\entry{Ph.D., California Institute of Technology}{Environmental Engineering Science}{2019--2023}
+\textit{Thesis:} From Source to Sink: Measuring and Modeling Methane Emissions and Loss.\\
+\textit{Advisor:} Christian Frankenberg
+\vspace{5pt}
+
+\entry{M.S., California Institute of Technology}{Environmental Engineering Science}{2017--2019}
+\textit{Thesis:} Effects of Coupled Chemistry on Methane Emissions Estimates.\\
+\textit{Advisors:} Tapio Schneider \& Christian Frankenberg
+\vspace{5pt}
+
+\entry{B.A., University of California, Berkeley}{Geophysics, Highest Honors}{2012--2016}
+\textit{Thesis:} Neural Networks to Model Fluid Flows.\\
+\textit{Advisor:} Bruce Buffett
+
+% =====================================================================
+\section{Positions}
+
+\entry{Stanford Science Fellow, Postdoctoral Scholar}{Stanford University}{Sep 2023--Sep 2024; Feb 2026--Present}
+\textit{Supervisors:} Alison Hoyt \& Leo Hollberg
+\begin{itemize}
+  \item Co-leading a group developing ecosystem-scale greenhouse gas measurements with long-range lasers.
+  \item Quantifying the sensitivity of soil carbon sequestration to environmental change.
+  \item Built a retrieval algorithm for Earth's surface properties from far-infrared satellite spectroscopy, for processing measurements from the NASA PREFIRE mission.
+  \item Designed observing-system and data-assimilation simulations to optimize sensor placement and quantify information gain under physical and measurement uncertainty.
+  \item Developed hybrid machine-learning and physical models, with Bayesian information-content diagnostics, to identify which observations best constrain model parameters.
+  \item Mentoring a Ph.D. researcher in remote sensing, model development, data assimilation, and production-quality scientific code.
+\end{itemize}
+\vspace{4pt}
+
+\entry{Atmospheric Data Scientist; Data \& Algorithms Consultant}{Puloli, Inc.}{Jan 2023--Feb 2026}
+Consultant Jan 2023--Sep 2024; full-time data scientist Sep 2024--Feb 2026.
+\begin{itemize}
+  \item Algorithm and data-pipeline development for continuous methane monitoring in oil and gas.
+  \item Built Python analysis and scraping pipelines integrating surface and high-altitude balloon measurements into asynchronous deployment workflows.
+  \item Designed a real-time model-quality metric quantifying forecast uncertainty for operational decisions, increasing accuracy and automating measurement decisions (patent being filed).
+\end{itemize}
+\vspace{4pt}
+
+\entry{Algorithms \& Scientific Computing Consultant}{Multiple clients}{2023--Present}
+\begin{itemize}
+  \item Designed and deployed an AWS observation-planning system for a hyperspectral satellite constellation, reducing runtime from 46 hours to 4 while optimizing sensing opportunities.
+  \item Led customer workshops translating sensor and algorithm needs into technical requirements, validation protocols, and end-to-end tests.
+\end{itemize}
+\vspace{4pt}
+
+\entry{Ph.D. Researcher}{Caltech / NASA Jet Propulsion Laboratory}{Sep 2017--Jul 2023}
+\textit{Advisor:} Christian Frankenberg
+\begin{itemize}
+  \item Built Bayesian inversion and 1-D spectral-retrieval algorithms for greenhouse gases across satellite, Fourier-transform infrared, dual-comb, and laser-heterodyne measurements; accelerated inference on GPU and parallel systems.
+  \item Awarded an NSF Graduate Research Fellowship to modernize methane monitoring capabilities.
+  \item Mentored two students and one software engineer in satellite remote sensing techniques.
+\end{itemize}
+\vspace{4pt}
+
+\entry{Research Assistant}{Lawrence Berkeley National Laboratory}{Jun 2016--Jul 2017}
+\textit{Supervisors:} Daniel Feldman \& William D. Collins
+\begin{itemize}
+  \item Team member on NASA's CLARREO Science Team; investigated cloud--climate feedback using NASA satellite products.
+  \item Parallelized a PCA-based radiative transfer model on a 128-node cluster (MPI and Fortran).
+\end{itemize}
+\vspace{4pt}
+
+\entry{Summer Research Fellow}{Computational \& Applied Sciences Lab, UC Santa Barbara}{Summer 2015}
+\textit{Advisor:} Fr\'ed\'eric Gibou
+\vspace{3pt}
+
+\entry{Summer Research Intern}{Hydro-seismology Lab, UC Berkeley}{Summer 2014}
+\textit{Advisor:} Chi Wang
+
+% =====================================================================
+\section{Honors \& Awards}
+
+\simpleentry{Stanford University Science Fellowship}{2023--2026}
+\simpleentry{Caltech Engineering Division New Horizons Prize for Excellence in Mentorship \& Service}{2023}
+\simpleentry{Research University Alliance}{2022}
+\simpleentry{National Science Foundation Graduate Research Fellowship}{2018}
+\simpleentry{Boston Marathon Qualifier}{2019, 2020}
+\simpleentry{3rd Place, US Blind Athletes National Championships in the Marathon}{2019}
+\simpleentry{1st Place, Collegiate Triathlon National Championships, para-athlete division}{2016}
+\simpleentry{``UC Leads'' Fellowship \& Best Presentation Award}{2014--2016}
+\simpleentry{Albert Newman Fellowship}{2014}
+\simpleentry{Berkeley Academic Merit Scholarship}{2013--2016}
+
+% =====================================================================
+\section{Publications}
+
+\subsection{Peer-reviewed journal articles}
+\begin{pubs}
+\item[6.] K.A. Lamantia, L.G. Thompson, M.E. Davis, B. Riddell-Young, I. Strawson, É. Beaudon,
+  E. Mosley-Thompson, \me, E.J. Brook (2026). A global atmospheric methane record from a tropical
+  ice core. \textit{Nature}. \href{https://doi.org/10.1038/s41586-026-10938-1}{10.1038/s41586-026-10938-1}
+
+\item[5.] H. Dion-Kirschner, \me, C. Frankenberg, W.W. Fischer (2024). Evaluating the contribution of
+  methanotrophy kinetics to uncertainty in the soil methane sink. \textit{Environmental Research Letters}.
+  \href{https://doi.org/10.1088/1748-9326/ad4c7a}{10.1088/1748-9326/ad4c7a}
+
+\item[4.] R.K. Cole, C.D. Fredrick, \me, S.A. Diddams (2023). Precision Doppler shift measurements with a
+  frequency-comb-calibrated laser heterodyne radiometer. \textit{Optics Letters}.
+  \href{https://doi.org/10.1364/OL.500652}{10.1364/OL.500652}
+
+\item[3.] \me, A.J. Turner, Y. Yin, M.J. Prather, C. Frankenberg (2020). Effects of chemical feedbacks on
+  decadal methane emissions estimates. \textit{Geophysical Research Letters}.
+  \href{https://doi.org/10.1029/2019GL085706}{10.1029/2019GL085706}
+
+\item[2.] W.D. Collins, D.R. Feldman, C. Kuo, \me\ (2018). Large regional shortwave forcing by
+  anthropogenic methane informed by Jovian observations. \textit{Science Advances}.
+  \href{https://doi.org/10.1126/sciadv.aas9593}{10.1126/sciadv.aas9593}
+
+\item[1.] D.R. Feldman, W.D. Collins, Y.L. Shea, \me, X. Liu, B.A. Wielicki (2016). Observing climate change
+  with both shortwave and longwave hyperspectral satellite instrumentation. \textit{Light, Energy and the
+  Environment}. \href{https://doi.org/10.1364/HISE.2016.HW2F.1}{10.1364/HISE.2016.HW2F.1}
+\end{pubs}
+
+\subsection{Conference proceedings \& abstracts}
+\begin{pubs}
+\item[3.] Y. Yin, \me, Q. Wang, A.J. Turner, F. Chevallier, C. Frankenberg (2026). Natural variability in
+  stratosphere--troposphere exchange: an underappreciated driver of global methane growth rates.
+  \textit{EGU General Assembly}.
+  \href{https://doi.org/10.5194/egusphere-egu26-21945}{10.5194/egusphere-egu26-21945}
+
+\item[2.] C. Huff, A.M. Hoyt, J. Lamb, \me, A. Majumdar, L.W. Hollberg (2025). Enhancing the monitoring of
+  dispersed methane sources with open-path optical sensors. \textit{Optica Sensing Congress}.
+  \href{https://doi.org/10.1364/SENSORS.2025.SM2D.2}{10.1364/SENSORS.2025.SM2D.2}
+
+\item[1.] R.K. Cole, C.D. Fredrick, \me, C. Frankenberg, S.A. Diddams (2023). Precision atmospheric wind
+  measurements with a frequency-comb-calibrated laser heterodyne radiometer.
+  \textit{Optica Sensing Congress}.
+  \href{https://doi.org/10.1364/ES.2023.ETu5E.5}{10.1364/ES.2023.ETu5E.5}
+\end{pubs}
+
+\subsection{Submitted or in preparation}
+\begin{pubs}
+\item[3.] \me, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg (submitted). Towards
+  laboratory-level accuracy in the field: environmental impacts on greenhouse gas observations and
+  spectroscopy measured by laser frequency combs. \textit{Atmospheric Measurement Techniques}.
+
+\item[2.] \me, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg (in prep).
+  Next-generation ground-based measurements of vertical greenhouse gas gradients with laser frequency
+  combs. \textit{Atmospheric Measurement Techniques}.
+
+\item[1.] \me, Y. Yin, A.J. Turner, C. Frankenberg (in prep). Global methane emissions trends and
+  atmospheric oxidation are modulated by stratospheric transport and ENSO.
+\end{pubs}
+
+\subsection{Other publications}
+\begin{pubs}
+\item[3.] D.R. Dounas-Frazer et al.\ (2022). Increase investment in accessible physics labs: a call to action
+  for the physics education community. \textit{arXiv preprint}, endorsed by the American Association of
+  Physics Teachers. \href{https://doi.org/10.48550/arXiv.2202.00816}{10.48550/arXiv.2202.00816}
+
+\item[2.] Caltech (2021). \href{https://inclusive.caltech.edu/documents/19303/Report_of_the_Committee_on_Student_Admissions_and_Recruitment.pdf}{Report
+  of the Committee on Student Admissions and Recruitment}.
+
+\item[1.] Glassdoor (2017). \href{https://www.glassdoor.com/blog/newton-nguyen/}{A triathlete shares his
+  5 secrets to success}.
+\end{pubs}
+
+% =====================================================================
+\section{Research Software}
+
+\entry{EnforceFlux}{Python}{2024--Present}
+Observation-simulator framework for simulating heterogeneous greenhouse gas sources and evaluating
+monitoring network layouts across atmospheric transport models (FLEXPART).
+\href{https://github.com/Newton-Climate/EnforceFlux}{github.com/Newton-Climate/EnforceFlux}
+\vspace{4pt}
+
+\entry{ConstrainedCarbon}{Python}{2024--Present}
+Bayesian observing-system simulator using optimal estimation, degrees of freedom for signal, and Shapley
+attribution to rank the value of candidate measurements.
+\href{https://github.com/Newton-Climate/ConstrainedCarbon}{github.com/Newton-Climate/ConstrainedCarbon}
+\vspace{4pt}
+
+\entry{SpectralFit.jl}{Julia}{Jun 2020--Present}
+Open-source Bayesian retrieval engine for greenhouse gas concentrations and vertical profiles from TCCON,
+OCO-2, and dual-comb spectra, with GPU and parallel acceleration. Resulted in two invited talks and one
+peer-reviewed publication.
+\href{https://github.com/Newton-Climate/SpectralFit.jl}{github.com/Newton-Climate/SpectralFit.jl}
+\vspace{4pt}
+
+\entry{OHMethane}{Julia \& MATLAB}{Jan 2018--Present}
+Four-box model simulating atmospheric methane chemistry and inferring global emissions under chemical
+constraints via Bayesian optimization. Resulted in two conference presentations and two peer-reviewed
+publications. \href{https://github.com/Newton-Climate/OHMethane}{github.com/Newton-Climate/OHMethane}
+
+% =====================================================================
+\section{Invited Presentations}
+
+\subsection{Technical talks}
+\simpleentry{University of Washington, Atmospheric Science Dept.\ Seminar \textbar\ ``Towards continuous, 3-D observation of greenhouse gas concentrations directly in the field''}{2022}
+\simpleentry{University of Texas at Austin, Dept.\ Seminar \textbar\ ``From source to sink: constraining past \& present methane emissions''}{2022}
+\simpleentry{Harvard, Atmospheric Chemistry Group \textbar\ ``Biological, dynamic, and chemical drivers of methane destruction''}{2021}
+\simpleentry{Caltech, Environmental Science Dept.\ Seminar \textbar\ ``Destructive interference: frequency combs for greenhouse gas remote sensing''}{2021}
+\simpleentry{Caltech, Astronomy Division \textbar\ ``Monitoring climate change from space''}{2019}
+
+\subsection{Invited outreach talks}
+\simpleentry{Stanford d.school \textbar\ ``Panel on accessibility for engineering education''}{2023}
+\simpleentry{Coca-Cola Headquarters \textbar\ ``Activism and perseverance in the Asian community''}{2022}
+\simpleentry{Reclaiming STEM \textbar\ ``Disability in science''}{2021}
+\simpleentry{Communication Science Conference (ComSciCon) \textbar\ ``DEI in STEM''}{2021}
+\simpleentry{National Association of Blind Students \textbar\ ``Communicating as a blind presenter''}{2021}
+\simpleentry{National Federation of the Blind \textbar\ ``Designing your environment: how to succeed as a blind scientist''}{2021}
+\simpleentry{National Federation of the Blind \textbar\ ``Developing tools for blind scientists''}{2019}
+\simpleentry{Aira Corporation \textbar\ ``Being a blind scientist''}{2018}
+
+% =====================================================================
+\section{Conference Presentations}
+
+\begin{pubs}
+\item[] \me, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg (2022). Bridging the gap:
+  frequency combs for a next-generation GHG monitoring network. Poster, American Geophysical Union.
+
+\item[] \me, K. Cossel, E. Waxman, N. Newbury, I. Coddington, C. Frankenberg (2021). Destructive
+  interference: future long-term greenhouse gas monitoring with dual-comb spectroscopy needs more
+  accurate spectroscopic parameters. Poster, American Geophysical Union.
+
+\item[] \me, C. Frankenberg, A.J. Turner, Y. Yin, M.J. Prather (2019). Quantifying the effect of neglecting
+  variable methane lifetime on methane emissions estimates. Poster, American Geophysical Union.
+
+\item[] \me, C. Frankenberg, Y. Yin, A.J. Turner (2018). Effects of methane and hydroxyl radical chemistry
+  on decadal methane emissions estimates. Poster, American Geophysical Union.
+
+\item[] D. Feldman, W.D. Collins, B.A. Wielicki, Y. Shea, M.G. Mlynczak, C. Kuo, \me\ (2017). How
+  continuous observations of shortwave reflectance spectra can narrow the range of shortwave climate
+  feedbacks. Poster, American Geophysical Union.
+\end{pubs}
+
+% =====================================================================
+\section{Teaching}
+
+\simpleentry{Caltech \textbar\ Co-taught courses in infrared sensing, numerical modelling of physical systems, and information retrieval theory}{2019--2023}
+\simpleentry{ESE 103 Biogeochemistry \textbar\ Teaching assistant, Christian Frankenberg (rating 5/5)}{Spring 2019}
+\simpleentry{ESE 156 Remote Sensing of the Atmosphere \& Biosphere \textbar\ Teaching assistant, Christian Frankenberg (rating 5/5)}{Fall 2019}
+\simpleentry{Scientific Writing \& Communication, UCLA \textbar\ Teaching assistant}{Summer 2019}
+
+% =====================================================================
+\section{Leadership \& Service}
+
+\entry{Co-founder}{Systemic Access Mentorship Program}{Aug 2020--Present}
+\begin{itemize}
+  \item National mentorship program for blind students in STEM, with 40 participants across three countries.
+  \item Convene virtual meetings twice a month and meet with mentees regularly.
+\end{itemize}
+\vspace{3pt}
+
+\simpleentry{\textbf{Co-founder, President \& Treasurer}~\textbar~Caltech Disability Coalition}{2020--2022}
+\vspace{3pt}
+
+\entry{Student representative}{Caltech Graduate Admissions Policy Committee}{Sep 2020--Mar 2021}
+\begin{itemize}
+  \item Selected by the President of Caltech for the faculty committee tasked with increasing student body diversity and rewriting graduate admissions policies.
+  \item Proposed three policies for reducing admissions bias, which the university implemented.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Member}{AAPT Committee for Accessible Labs}{2019--2021}
+\begin{itemize}
+  \item Improving disability access in K--12 and university physics labs; produced a white paper on best practices and a conference presentation.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Representative, Engineering \& Applied Sciences}{Caltech Graduate Student Council}{2018--2020}
+\begin{itemize}
+  \item Member of the Advocacy \& Diversity Sub-committee.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Founder \& President}{Caltech Triathlon Club}{Sep 2019--Present}
+\begin{itemize}
+  \item Coached track and cycling practices for more than 20 athletes.
+  \item Organized a three-race series involving 100 participants from 11 schools.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Committee member}{Lawrence Berkeley National Laboratory}{2016--2017}
+\begin{itemize}
+  \item Lab-wide Employee Accessibility Committee; Climate \& Ecosystem Science Division representative for diversity and inclusion; DEI representative for the DOE External Review Committee.
+\end{itemize}
+\vspace{3pt}
+
+\simpleentry{\textbf{President}~\textbar~UC Berkeley Atmospheric Science Association}{2015--2016}
+
+% =====================================================================
+\section{Selected Press}
+
+\simpleentry{Stanford University \textbar\ 2023 cohort of Stanford Science Fellows named}{2023}
+\simpleentry{\#SoCaltech \textbar\ Newton Nguyen}{Mar 2022}
+\simpleentry{Runner's World \textbar\ How running has helped Newton Nguyen navigate life as a blind man}{Oct 2021}
+\simpleentry{Ally commercial \textbar\ We're all better off with an Ally}{Jul 2021}
+\simpleentry{Mini-documentary \textbar\ Marathoning through life with vision loss}{Oct 2021}
+\simpleentry{Careers for the Blind Podcast \textbar\ Episode 35: Climate Scientist Newton Nguyen}{Oct 2021}
+\simpleentry{Caltech Magazine \textbar\ Creating a more inclusive Caltech}{Fall 2020}
+\simpleentry{ScienceDaily \textbar\ By Jove! Methane's effects on sunlight vary by region}{Sep 2018}
+\simpleentry{Berkeley Lab News \textbar\ Newton Nguyen's vision loss doesn't slow him down}{Oct 2016}
+\simpleentry{KTVU News \textbar\ 98 percent blind Cal Berkeley student competes as triathlete}{Mar 2015}
+
+% =====================================================================
+\section{Technical Skills}
+
+\textbf{Languages \& tools:} Python, Julia (incl.\ CUDA), R, MATLAB, Fortran, MPI, Git, Bash, Docker, AWS,
+GitHub Actions, AsyncIO.\\[2pt]
+\textbf{Scientific stack:} NumPy/SciPy, PyTorch, JAX, scikit-learn, Xarray, NetCDF, Zarr, HDF5.\\[2pt]
+\textbf{Expertise:} Bayesian inference and optimal estimation, uncertainty quantification, data assimilation,
+observation planning and information content, radiative transfer, satellite and ground-based spectroscopy,
+greenhouse gas emissions, high-performance and GPU computing, machine learning.\\[2pt]
+\textbf{Memberships:} American Geophysical Union (2014--present); American Meteorological Society
+(2017--present).
+
+\end{document}

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 492" role="img" aria-labelledby="t3 d3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t3">The global methane sink and the uncertainty in its soil component</title>
+  <desc id="d3">A schematic in two parts. Above, a stacked bar divides the global methane sink into roughly 90 percent reaction with the hydroxyl radical in the troposphere, about 6 percent loss in the stratosphere, and about 4 percent uptake by soil microbes. Below left, a soil cross-section shows atmospheric methane diffusing down and methanotrophic bacteria oxidizing it to carbon dioxide. Below right, a wide horizontal error bar shows that the size of the global soil sink is poorly constrained because the kinetics of methanotrophy are uncertain.</desc>
+
+  <defs>
+    <clipPath id="barClip"><rect x="20" y="84" width="680" height="44" rx="8"/></clipPath>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9e1d1"/>
+      <stop offset="100%" stop-color="#d3c7af"/>
+    </linearGradient>
+    <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4f9aa5"/>
+    </marker>
+    <marker id="ar3g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9a8f78"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Panel A: sink partition ===== -->
+  <text x="20" y="62" font-size="15" font-weight="700" fill="#30363d">Partition of the global methane sink</text>
+
+  <g clip-path="url(#barClip)">
+    <rect x="20" y="84" width="612" height="44" fill="#4f9aa5"/>
+    <rect x="632" y="84" width="41" height="44" fill="#7794ce"/>
+    <rect x="673" y="84" width="27" height="44" fill="#6ba78c"/>
+  </g>
+  <rect x="20" y="84" width="680" height="44" rx="8" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="326" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">≈90%</text>
+
+  <!-- legend -->
+  <g font-size="13" fill="#4a565a">
+    <rect x="20" y="152" width="14" height="14" rx="3" fill="#4f9aa5"/>
+    <text x="44" y="164">Reaction with OH in the troposphere — ≈90%</text>
+    <rect x="20" y="178" width="14" height="14" rx="3" fill="#7794ce"/>
+    <text x="44" y="190">Loss in the stratosphere — ≈6%</text>
+    <rect x="20" y="204" width="14" height="14" rx="3" fill="#6ba78c"/>
+    <text x="44" y="216">Uptake by soil microbes — ≈4%</text>
+  </g>
+
+  <!-- callout to soil segment -->
+  <path d="M 686 140 L 686 134" fill="none" stroke="#6ba78c" stroke-width="1.6"/>
+  <path d="M 686 140 L 560 196" fill="none" stroke="#6ba78c" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <text x="556" y="214" text-anchor="end" font-size="12" font-style="italic" fill="#4f7a5e">smallest term, largest relative uncertainty</text>
+
+  <line x1="20" y1="252" x2="700" y2="252" stroke="#e4ebec" stroke-width="1.5"/>
+
+  <!-- ===== Panel B left: soil column ===== -->
+  <text x="20" y="286" font-size="14" font-weight="700" fill="#30363d">The soil sink</text>
+  <rect x="20" y="344" width="300" height="118" rx="10" fill="url(#soil)"/>
+  <line x1="20" y1="346" x2="320" y2="346" stroke="#8da67c" stroke-width="4" stroke-linecap="round"/>
+  <text x="36" y="372" font-size="11" font-weight="600" letter-spacing="1.4" fill="#a1957c">SOIL</text>
+
+  <path d="M 108 312 L 108 396" fill="none" stroke="#4f9aa5" stroke-width="2.4" marker-end="url(#ar3)"/>
+  <text x="108" y="304" text-anchor="middle" font-size="15" font-weight="700" fill="#1f3c40">CH₄</text>
+
+  <path d="M 226 396 L 226 312" fill="none" stroke="#9a8f78" stroke-width="2.2" marker-end="url(#ar3g)"/>
+  <text x="226" y="304" text-anchor="middle" font-size="15" font-weight="700" fill="#6f6550">CO₂</text>
+
+  <g fill="#6ba78c">
+    <circle cx="156" cy="408" r="5.5"/><circle cx="172" cy="418" r="5.5"/><circle cx="144" cy="422" r="5.5"/>
+    <circle cx="186" cy="406" r="5.5"/><circle cx="166" cy="432" r="5.5"/>
+  </g>
+  <text x="170" y="452" text-anchor="middle" font-size="12" fill="#6f6550">methanotrophic bacteria</text>
+
+  <!-- ===== Panel B right: uncertainty ===== -->
+  <text x="376" y="286" font-size="14" font-weight="700" fill="#30363d">Uncertainty in the soil sink</text>
+  <text x="533" y="330" text-anchor="middle" font-size="12" fill="#6b7a7f">range implied by methanotrophy kinetics</text>
+
+  <line x1="420" y1="372" x2="650" y2="372" stroke="#6ba78c" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="420" y1="358" x2="420" y2="386" stroke="#6ba78c" stroke-width="3"/>
+  <line x1="650" y1="358" x2="650" y2="386" stroke="#6ba78c" stroke-width="3"/>
+  <circle cx="505" cy="372" r="7.5" fill="#2f6b4c"/>
+
+  <line x1="396" y1="412" x2="690" y2="412" stroke="#b7c4c8" stroke-width="1.4"/>
+  <text x="420" y="432" text-anchor="middle" font-size="12" fill="#6b7a7f">smaller sink</text>
+  <text x="650" y="432" text-anchor="middle" font-size="12" fill="#6b7a7f">larger sink</text>
+  <text x="505" y="352" text-anchor="middle" font-size="11" fill="#2f6b4c">best estimate</text>
+
+  <text x="20" y="484" font-size="12" fill="#98a4a8">Schematic after Dion-Kirschner, Nguyen et al., Environmental Research Letters (2024)</text>
+</svg>

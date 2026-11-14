@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 492" role="img" aria-labelledby="t1 d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t1">The methane–hydroxyl feedback loop and its effect on methane lifetime</title>
+  <desc id="d1">A schematic showing methane and the hydroxyl radical OH linked in a positive feedback loop: methane consumes OH, and the resulting loss of OH lets methane survive longer. Below, a bar chart compares the perturbation lifetime of a 10 teragram methane pulse: 9.4 years when chemistry is held fixed, and 13.2 years when chemistry is allowed to respond, about 40 percent longer.</desc>
+
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#30363d"/>
+    </marker>
+    <marker id="arTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4f9aa5"/>
+    </marker>
+    <marker id="arRose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c56b76"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Panel A: the feedback loop ===== -->
+  <rect x="20" y="44" width="680" height="186" rx="14" fill="#f5f9fa" stroke="#dde7e9" stroke-width="1.5"/>
+  <text x="40" y="70" font-size="13" font-weight="600" letter-spacing="1.6" fill="#93a1a6">TROPOSPHERE</text>
+
+  <!-- CH4 node -->
+  <rect x="120" y="104" width="170" height="70" rx="12" fill="#e4f0f2" stroke="#4f9aa5" stroke-width="2"/>
+  <text x="205" y="137" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3c40">CH₄</text>
+  <text x="205" y="159" text-anchor="middle" font-size="13" fill="#5b7c80">methane</text>
+
+  <!-- OH node -->
+  <rect x="430" y="104" width="170" height="70" rx="12" fill="#fbeaec" stroke="#c56b76" stroke-width="2"/>
+  <text x="515" y="137" text-anchor="middle" font-size="27" font-weight="700" fill="#5a2228">OH</text>
+  <text x="515" y="159" text-anchor="middle" font-size="13" fill="#8a5a60">hydroxyl radical</text>
+
+  <!-- top arrow: CH4 consumes OH -->
+  <path d="M 292 118 C 330 86, 390 86, 428 118" fill="none" stroke="#4f9aa5" stroke-width="2.2" marker-end="url(#arTeal)"/>
+  <text x="360" y="80" text-anchor="middle" font-size="15" fill="#30363d">CH₄ consumes OH</text>
+
+  <!-- bottom arrow: less OH, longer lifetime -->
+  <path d="M 428 160 C 390 192, 330 192, 292 160" fill="none" stroke="#c56b76" stroke-width="2.2" marker-end="url(#arRose)"/>
+  <text x="360" y="215" text-anchor="middle" font-size="15" fill="#30363d">reduced OH extends CH₄ lifetime</text>
+
+  <!-- centre badge -->
+  <rect x="294" y="126" width="132" height="26" rx="13" fill="#ffffff" stroke="#47D3E5" stroke-width="1.5"/>
+  <text x="360" y="144" text-anchor="middle" font-size="13" font-weight="600" fill="#1d6670">positive feedback</text>
+
+  <!-- emissions in -->
+  <path d="M 205 266 L 205 180" fill="none" stroke="#30363d" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="205" y="286" text-anchor="middle" font-size="15" font-weight="600" fill="#30363d">emissions</text>
+  <text x="205" y="305" text-anchor="middle" font-size="13" fill="#6b7a7f">wetlands · energy · agriculture</text>
+
+  <!-- removal out -->
+  <path d="M 515 180 L 515 266" fill="none" stroke="#30363d" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="515" y="286" text-anchor="middle" font-size="15" font-weight="600" fill="#30363d">oxidation</text>
+  <text x="515" y="305" text-anchor="middle" font-size="13" fill="#6b7a7f">≈90% of the global CH₄ sink</text>
+
+  <!-- ===== Panel B: lifetime bars ===== -->
+  <line x1="20" y1="336" x2="700" y2="336" stroke="#e4ebec" stroke-width="1.5"/>
+  <text x="20" y="364" font-size="15" font-weight="700" fill="#30363d">Lifetime of a 10 Tg methane pulse</text>
+
+  <text x="230" y="399" text-anchor="end" font-size="14" fill="#5b6a6f">chemistry held fixed</text>
+  <rect x="240" y="382" width="282" height="26" rx="4" fill="#b9cfd6"/>
+  <text x="534" y="400" font-size="14" font-weight="700" fill="#30363d">9.4 yr</text>
+
+  <text x="230" y="439" text-anchor="end" font-size="14" fill="#5b6a6f">interactive chemistry</text>
+  <rect x="240" y="422" width="396" height="26" rx="4" fill="#4f9aa5"/>
+  <text x="648" y="440" font-size="14" font-weight="700" fill="#30363d">13.2 yr</text>
+
+  <text x="240" y="470" font-size="13" fill="#1d6670">Feedbacks extend the pulse lifetime by ≈40%.</text>
+  <text x="20" y="488" font-size="12" fill="#98a4a8">Schematic after Nguyen et al., Geophysical Research Letters (2020)</text>
+</svg>

@@ -1,0 +1,399 @@
+/* ------------------------------------------------------------------
+   Custom additions for newtonnguyen.com
+   Layered on top of the HTML5 UP "Story" template.
+   ------------------------------------------------------------------ */
+
+:root {
+	--ink:        #30363d;
+	--ink-soft:   #5b6a6f;
+	--ink-faint:  #8e9a9e;
+	--rule:       #e2e8ea;
+	--teal:       #4f9aa5;
+	--teal-dark:  #1d6670;
+	--teal-wash:  #f3f9fa;
+	--accent:     #47D3E5;
+}
+
+/* Keyboard users need to see where they are. */
+a:focus-visible,
+button:focus-visible,
+.topnav a:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 3px;
+}
+
+/* Skip link: first stop for screen-reader and keyboard users. */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	z-index: 10000;
+	padding: 0.5rem 0.9rem;
+	background: #ffffff;
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
+	border: 2px solid var(--accent);
+}
+
+.skip-link:focus {
+	left: 0.5rem;
+	top: 0.5rem;
+}
+
+/* ---------- Nav ----------
+   The template floats nav links right, which wraps badly on narrow
+   screens. Flex with row-reverse keeps the same right-aligned order on
+   desktop, and wrap-reverse keeps the reading order correct when it wraps. */
+
+.topnav {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.topnav a {
+	float: none;
+}
+
+.topnav a[aria-current="page"] {
+	box-shadow: inset 0 -3px 0 var(--accent);
+}
+
+@media screen and (max-width: 736px) {
+	.topnav {
+		justify-content: center;
+	}
+
+	.topnav a {
+		padding: 6px 12px;
+		font-size: 16px;
+	}
+}
+
+/* ---------- Section scaffolding ---------- */
+
+.section-intro {
+	max-width: 34rem;
+	margin: 0 auto 2.5rem auto;
+	color: var(--ink-soft);
+}
+
+.section-label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.7em;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--teal-dark);
+}
+
+.rule {
+	height: 1px;
+	margin: 3rem 0;
+	background: var(--rule);
+	border: 0;
+}
+
+/* ---------- Research themes ---------- */
+
+.themes {
+	display: grid;
+	gap: 2.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.theme {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+	gap: 2rem;
+	align-items: center;
+	padding: 1.6rem;
+	border: 1px solid var(--rule);
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.theme:nth-child(even) .theme-figure {
+	order: 2;
+}
+
+.theme-figure {
+	margin: 0;
+	min-width: 0;
+}
+
+.theme-figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	background: #ffffff;
+}
+
+.theme-body h3 {
+	margin-bottom: 0.6rem;
+	letter-spacing: -0.025em;
+}
+
+.theme-body p {
+	color: var(--ink-soft);
+	margin-bottom: 0.9rem;
+}
+
+.theme-body p:last-child {
+	margin-bottom: 0;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0 0 0.9rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tags li {
+	padding: 0.18em 0.6em;
+	border: 1px solid var(--rule);
+	border-radius: 999px;
+	background: var(--teal-wash);
+	color: var(--teal-dark);
+	font-size: 0.72em;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	white-space: nowrap;
+}
+
+/* ---------- Result figures from published papers ---------- */
+
+.figures {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.figure-card {
+	margin: 0;
+	padding: 1.2rem;
+	border: 1px solid var(--rule);
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.figure-card img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.figure-card figcaption {
+	margin-top: 0.9rem;
+	color: var(--ink-soft);
+	font-size: 0.82em;
+	line-height: 1.6;
+}
+
+.figure-card figcaption strong {
+	color: var(--ink);
+}
+
+.figure-source {
+	display: block;
+	margin-top: 0.5rem;
+	color: var(--ink-faint);
+	font-size: 0.95em;
+}
+
+/* ---------- Publications ---------- */
+
+.pub-year {
+	display: flex;
+	align-items: center;
+	gap: 0.9rem;
+	margin: 2.2rem 0 1.1rem 0;
+	color: var(--ink-faint);
+	font-size: 0.78em;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+}
+
+.pub-year::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: var(--rule);
+}
+
+.pubs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pubs li {
+	padding: 0 0 1.3rem 0;
+	margin: 0;
+}
+
+.pubs li:last-child {
+	padding-bottom: 0;
+}
+
+.pub-title {
+	display: block;
+	margin-bottom: 0.3rem;
+	color: var(--ink);
+	font-weight: 600;
+	line-height: 1.45;
+}
+
+.pub-authors {
+	display: block;
+	margin-bottom: 0.35rem;
+	color: var(--ink-soft);
+	font-size: 0.84em;
+	line-height: 1.6;
+}
+
+.pub-authors .me {
+	color: var(--ink);
+	font-weight: 700;
+}
+
+.pub-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.8em;
+}
+
+.venue {
+	padding: 0.18em 0.6em;
+	border-radius: 4px;
+	background: #eef3f4;
+	color: var(--ink);
+	font-weight: 600;
+	font-style: normal;
+}
+
+.venue.is-flagship {
+	background: var(--teal);
+	color: #ffffff;
+}
+
+.venue.is-preprint {
+	background: #f4f0e6;
+	color: #6f6346;
+}
+
+.pub-meta a {
+	color: var(--teal-dark);
+	border-bottom: 1px dotted currentColor;
+	text-decoration: none;
+}
+
+.pub-meta a:hover {
+	border-bottom-style: solid;
+}
+
+.pub-status {
+	color: var(--ink-faint);
+	font-style: italic;
+}
+
+/* ---------- Software ---------- */
+
+.software {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.software li {
+	padding: 1.3rem;
+	border: 1px solid var(--rule);
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.software h3 {
+	margin-bottom: 0.2rem;
+	font-size: 1.05em;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.software .lang {
+	display: block;
+	margin-bottom: 0.7rem;
+	color: var(--ink-faint);
+	font-size: 0.75em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.software p {
+	margin-bottom: 0.8rem;
+	color: var(--ink-soft);
+	font-size: 0.88em;
+}
+
+.software a.repo {
+	color: var(--teal-dark);
+	font-size: 0.85em;
+	font-weight: 600;
+	border-bottom: 1px dotted currentColor;
+	text-decoration: none;
+}
+
+.software a.repo:hover {
+	border-bottom-style: solid;
+}
+
+/* ---------- Narrow screens ---------- */
+
+@media screen and (max-width: 980px) {
+	.theme {
+		grid-template-columns: 1fr;
+		gap: 1.4rem;
+	}
+
+	.theme:nth-child(even) .theme-figure {
+		order: 0;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.theme {
+		padding: 1.1rem;
+	}
+
+	.figures {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+	.topnav,
+	footer {
+		display: none;
+	}
+}

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 492" role="img" aria-labelledby="t2 d2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t2">How a greenhouse gas measurement becomes a vertical concentration profile</title>
+  <desc id="d2">A schematic in two parts. Above, sunlight travels down through layers of the atmosphere, where methane and carbon dioxide molecules absorb light at particular wavelengths, and reaches a ground-based spectrometer. Below, the measured spectrum, showing three absorption dips in transmittance, is turned by a Bayesian retrieval into a vertical profile of gas concentration against altitude, drawn with a shaded uncertainty band that widens with height.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6f1f6"/>
+      <stop offset="100%" stop-color="#f8fbfc"/>
+    </linearGradient>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#30363d"/>
+    </marker>
+    <marker id="arSun" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d9a23c"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Panel A: the light path ===== -->
+  <rect x="20" y="40" width="680" height="176" rx="14" fill="url(#sky)" stroke="#dde7e9" stroke-width="1.5"/>
+  <rect x="20" y="206" width="680" height="18" rx="5" fill="#dbe5de"/>
+
+  <!-- sun -->
+  <circle cx="106" cy="82" r="19" fill="#f2c75c"/>
+  <g stroke="#f2c75c" stroke-width="2.4" stroke-linecap="round">
+    <line x1="106" y1="52" x2="106" y2="44"/>
+    <line x1="106" y1="120" x2="106" y2="112"/>
+    <line x1="76" y1="82" x2="68" y2="82"/>
+    <line x1="144" y1="82" x2="136" y2="82"/>
+    <line x1="85" y1="61" x2="79" y2="55"/>
+    <line x1="127" y1="103" x2="133" y2="109"/>
+    <line x1="85" y1="103" x2="79" y2="109"/>
+    <line x1="127" y1="61" x2="133" y2="55"/>
+  </g>
+
+  <!-- atmosphere layers -->
+  <g stroke="#c3dbe3" stroke-width="1.3" stroke-dasharray="5 5">
+    <line x1="176" y1="92" x2="650" y2="92"/>
+    <line x1="176" y1="130" x2="650" y2="130"/>
+    <line x1="176" y1="168" x2="650" y2="168"/>
+  </g>
+  <g font-size="11" fill="#9db3bb" text-anchor="end">
+    <text x="668" y="89">upper</text>
+    <text x="668" y="127">middle</text>
+    <text x="668" y="165">lower</text>
+  </g>
+
+  <!-- molecules -->
+  <g fill="#4f9aa5" opacity="0.55">
+    <circle cx="232" cy="78" r="3.6"/><circle cx="318" cy="104" r="3.6"/><circle cx="392" cy="82" r="3.6"/>
+    <circle cx="268" cy="142" r="3.6"/><circle cx="356" cy="156" r="3.6"/><circle cx="446" cy="120" r="3.6"/>
+    <circle cx="300" cy="186" r="3.6"/><circle cx="420" cy="180" r="3.6"/><circle cx="492" cy="150" r="3.6"/>
+    <circle cx="214" cy="118" r="3.6"/><circle cx="470" cy="190" r="3.6"/><circle cx="376" cy="118" r="3.6"/>
+  </g>
+
+  <!-- solar beam -->
+  <path d="M 128 100 L 556 190" fill="none" stroke="#d9a23c" stroke-width="2.6" marker-end="url(#arSun)"/>
+  <text x="250" y="132" font-size="13" font-weight="600" fill="#9a7222" transform="rotate(11.8 250 132)">solar beam</text>
+
+  <!-- instrument -->
+  <rect x="556" y="186" width="124" height="28" rx="6" fill="#30363d"/>
+  <text x="618" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">spectrometer</text>
+
+  <text x="40" y="150" font-size="13" fill="#6b7a7f">CH₄ and CO₂</text>
+  <text x="40" y="168" font-size="13" fill="#6b7a7f">absorb light</text>
+
+  <!-- ===== Panel B: spectrum to profile ===== -->
+  <!-- left: spectrum -->
+  <text x="30" y="266" font-size="14" font-weight="700" fill="#30363d">Measured spectrum</text>
+  <g stroke="#b7c4c8" stroke-width="1.4">
+    <line x1="48" y1="286" x2="48" y2="430"/>
+    <line x1="48" y1="430" x2="306" y2="430"/>
+  </g>
+  <path d="M 52 300 L 88 300 C 94 300, 96 376, 104 376 C 112 376, 114 300, 120 300 L 162 300 C 168 300, 170 352, 178 352 C 186 352, 188 300, 194 300 L 236 300 C 242 300, 244 390, 252 390 C 260 390, 262 300, 268 300 L 304 300"
+        fill="none" stroke="#4f9aa5" stroke-width="2.4" stroke-linejoin="round"/>
+  <text x="32" y="358" font-size="12" fill="#6b7a7f" text-anchor="middle" transform="rotate(-90 32 358)">transmittance</text>
+  <text x="177" y="450" font-size="12" fill="#6b7a7f" text-anchor="middle">wavelength</text>
+
+  <!-- arrow -->
+  <path d="M 324 358 L 396 358" fill="none" stroke="#30363d" stroke-width="2" marker-end="url(#ar2)"/>
+  <text x="360" y="326" font-size="12" font-weight="600" fill="#30363d" text-anchor="middle">Bayesian</text>
+  <text x="360" y="340" font-size="12" font-weight="600" fill="#30363d" text-anchor="middle">retrieval</text>
+
+  <!-- right: vertical profile -->
+  <text x="416" y="266" font-size="14" font-weight="700" fill="#30363d">Retrieved vertical profile</text>
+  <g stroke="#b7c4c8" stroke-width="1.4">
+    <line x1="434" y1="286" x2="434" y2="430"/>
+    <line x1="434" y1="430" x2="692" y2="430"/>
+  </g>
+  <path d="M 668 424 C 666 390, 650 360, 614 340 C 578 322, 535 312, 508 310 L 480 310 C 507 312, 550 322, 586 340 C 622 360, 638 390, 640 424 Z"
+        fill="#4f9aa5" opacity="0.18"/>
+  <path d="M 654 424 C 652 390, 636 360, 600 340 C 564 322, 521 312, 494 310"
+        fill="none" stroke="#4f9aa5" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="412" y="358" font-size="12" fill="#6b7a7f" text-anchor="middle" transform="rotate(-90 412 358)">altitude</text>
+  <text x="563" y="450" font-size="12" fill="#6b7a7f" text-anchor="middle">concentration</text>
+  <text x="500" y="408" font-size="11" fill="#3f7f88">uncertainty</text>
+
+  <text x="20" y="484" font-size="12" fill="#98a4a8">Schematic of the retrieval behind SpectralFits.jl, applied to TCCON, OCO-2 and dual-comb spectra</text>
+</svg>
